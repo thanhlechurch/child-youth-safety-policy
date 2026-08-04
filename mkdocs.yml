@@ -1,9 +1,9 @@
 site_name: TLC Church-Wide Child and Youth Safety Policy
 site_description: Thanh Le Church - Church-Wide Child and Youth Safety Policy Manual
 site_author: Thanh Le Church
-site_url: https://thanh-le-church.github.io/child-youth-safety-policy/
+site_url: https://thanhlechurch.github.io/child-youth-safety-policy/
 docs_dir: docs
-repo_url: https://github.com/Thanh-Le-Church/child-youth-safety-policy
+repo_url: https://github.com/thanhlechurch/child-youth-safety-policy
 edit_uri: edit/main/docs/
 
 theme:
@@ -18,7 +18,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.highlight
     - search.suggest
@@ -49,7 +48,63 @@ nav:
   - Home: index.md
   - Preamble: preamble.md
   - Document Control: document-control.md
-  - Articles: articles/index.md
+  - Articles:
+    - Overview: articles/index.md
+    - Article I - Purpose, Scope, Definitions, and Governance:
+      - Overview: article-i/index.md
+      - Section 1 - Purpose, Authority, and Policy Hierarchy: article-i/section-01-purpose-authority-and-policy-hierarchy.md
+      - Section 2 - Biblical and Theological Foundation: article-i/section-02-biblical-and-theological-foundation.md
+      - Section 3 - Scope and Applicability: article-i/section-03-scope-and-applicability.md
+      - Section 4 - Definitions: article-i/section-04-definitions.md
+      - Section 5 - Governance and Safeguarding Responsibilities: article-i/section-05-governance-and-safeguarding-responsibilities.md
+      - Section 6 - Conflicts of Interest and Concerns Involving Senior Leaders: article-i/section-06-conflicts-of-interest-and-concerns-involving-senior-leaders.md
+    - Article II - Staff and Volunteer Eligibility, Screening, and Training:
+      - Overview: article-ii/index.md
+      - Section 7 - Staff and Volunteer Classifications and Eligibility: article-ii/section-07-worker-classifications-and-eligibility.md
+      - Section 8 - Screening and Selection: article-ii/section-08-screening-and-selection.md
+      - Section 9 - Background Checks and Ongoing Eligibility: article-ii/section-09-background-checks-and-ongoing-eligibility.md
+      - Section 10 - Training, Orientation, and Acknowledgment: article-ii/section-10-training-orientation-and-acknowledgment.md
+    - Article III - Conduct, Supervision, and Ministry Operations:
+      - Overview: article-iii/index.md
+      - Section 11 - Code of Conduct and Prohibited Behavior: article-iii/section-11-code-of-conduct-and-prohibited-behavior.md
+      - Section 12 - Supervision, Two-Adult Accountability, and Ratios: article-iii/section-12-supervision-two-adult-accountability-and-ratios.md
+      - Section 13 - Visibility, Facilities, and Monitoring: article-iii/section-13-visibility-facilities-and-monitoring.md
+      - Section 14 - Attendance, Check-In, Check-Out, and Release: article-iii/section-14-attendance-check-in-check-out-and-release.md
+      - Section 15 - Restrooms, Diapering, and Personal Care: article-iii/section-15-restrooms-diapering-and-personal-care.md
+      - Section 16 - Physical Contact, Discipline, and Behavioral Support: article-iii/section-16-physical-contact-discipline-and-behavioral-support.md
+    - Article IV - Health, Inclusion, and Emergency Preparedness:
+      - Overview: article-iv/index.md
+      - Section 17 - Illness, Allergies, Medication, and First Aid: article-iv/section-17-illness-allergies-medication-and-first-aid.md
+      - Section 18 - Disability, Inclusion, and Individual Support Plans: article-iv/section-18-disability-inclusion-and-individual-support-plans.md
+      - Section 19 - Emergency Preparedness and Missing-Child Response: article-iv/section-19-emergency-preparedness-and-missing-child-response.md
+    - Article V - One-on-One Ministry, SALT Discipleship, and Digital Communication:
+      - Overview: article-v/index.md
+      - Section 20 - One-on-One Interaction, Counseling, and Mentoring: article-v/section-20-one-on-one-interaction-counseling-and-mentoring.md
+      - Section 21 - SALT Youth Discipleship: article-v/section-21-salt-youth-discipleship.md
+      - Section 22 - Digital Communication, Social Media, Photography, and Privacy: article-v/section-22-digital-communication-social-media-photography-and-privacy.md
+    - Article VI - Transportation, Off-Site Activities, and Overnight Events:
+      - Overview: article-vi/index.md
+      - Section 23 - Transportation and Drivers: article-vi/section-23-transportation-and-drivers.md
+      - Section 24 - Off-Site Activities and Church-Sponsored Home Gatherings: article-vi/section-24-off-site-activities-and-church-sponsored-home-gatherings.md
+      - Section 25 - Camps, Retreats, Overnight Events, and Mission Trips: article-vi/section-25-camps-retreats-overnight-events-and-mission-trips.md
+    - Article VII - Misconduct, Reporting, and Organizational Response:
+      - Overview: article-vii/index.md
+      - Section 26 - Bullying, Hazing, Harassment, and Peer-to-Peer Misconduct: article-vii/section-26-bullying-hazing-harassment-and-peer-to-peer-misconduct.md
+      - Section 27 - Recognizing Concerns and Responding to Disclosures: article-vii/section-27-recognizing-concerns-and-responding-to-disclosures.md
+      - Section 28 - California External Reporting Requirements: article-vii/section-28-california-external-reporting-requirements.md
+      - Section 29 - Internal Notification, Review, and Organizational Response: article-vii/section-29-internal-notification-review-and-organizational-response.md
+    - Article VIII - Care, Records, Discipline, and Restricted Participation:
+      - Overview: article-viii/index.md
+      - Section 30 - Pastoral Care, Parent Communication, and Public Statements: article-viii/section-30-pastoral-care-parent-communication-and-public-statements.md
+      - Section 31 - Confidentiality, Documentation, and Record Preservation: article-viii/section-31-confidentiality-documentation-and-record-preservation.md
+      - Section 32 - Rebuke, Discipline, Removal, and Restoration: article-viii/section-32-rebuke-discipline-removal-and-restoration.md
+      - Section 33 - Registered Sex Offenders and Other Restricted Persons: article-viii/section-33-registered-sex-offenders-and-other-restricted-persons.md
+      - Section 34 - Outside Organizations and Facility Use: article-viii/section-34-outside-organizations-and-facility-use.md
+    - Article IX - Monitoring, Implementation, and Acknowledgment:
+      - Overview: article-ix/index.md
+      - Section 35 - Monitoring, Audits, and Annual Review: article-ix/section-35-monitoring-audits-and-annual-review.md
+      - Section 36 - Transitional Implementation Plan: article-ix/section-36-transitional-implementation-plan.md
+      - Section 37 - Policy Acknowledgment and Ministry-Specific Handbooks: article-ix/section-37-policy-acknowledgment-and-ministry-specific-handbooks.md
   - Appendices:
     - Overview: appendices/index.md
     - Appendix A - Immediate Response Guide: appendices/appendix-a.md
