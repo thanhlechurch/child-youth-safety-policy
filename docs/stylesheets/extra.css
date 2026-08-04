@@ -1,0 +1,9 @@
+/* Custom styling for TLC Safety Policy manual */
+
+:root {
+  --md-primary-fg-color: #c31c13;
+  --md-primary-fg-color--light: #d94b3d;
+  --md-primary-fg-color--dark: #8f0f09;
+  --md-accent-fg-color: #c31c13;
+  --md-accent-fg-color--transparent: rgba(195, 28, 19, 0.1);
+}

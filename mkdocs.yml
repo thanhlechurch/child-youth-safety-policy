@@ -1,0 +1,62 @@
+site_name: TLC Church-Wide Child and Youth Safety Policy
+site_description: Thanh Le Church - Church-Wide Child and Youth Safety Policy Manual
+site_author: Thanh Le Church
+site_url: https://thanh-le-church.github.io/child-youth-safety-policy/
+docs_dir: docs
+repo_url: https://github.com/Thanh-Le-Church/child-youth-safety-policy
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+  font:
+    text: DM Sans
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Preamble: preamble.md
+  - Document Control: document-control.md
+  - Articles: articles/index.md
+  - Appendices:
+    - Overview: appendices/index.md
+    - Appendix A - Immediate Response Guide: appendices/appendix-a.md
+    - Appendix B - Reporting And Escalation Directory: appendices/appendix-b.md
+    - Appendix C - Screening, Training, and Renewal Matrix: appendices/appendix-c.md
+    - Appendix D - Interim Protective Action Matrix: appendices/appendix-d.md
+    - Appendix E - Leadership Decisions Before Adoption: appendices/appendix-e.md
+    - Appendix F - Legal And Internal Development Notes: appendices/appendix-f.md
+    - Appendix G - Church-Wide Staff and Volunteer Acknowledgment: appendices/appendix-g.md
+  - Revision History: revision-history.md
