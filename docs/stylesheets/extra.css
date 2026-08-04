@@ -7,3 +7,33 @@
   --md-accent-fg-color: #c31c13;
   --md-accent-fg-color--transparent: rgba(195, 28, 19, 0.1);
 }
+
+/* Keep the full-color church mark legible against the red site header. */
+.md-header__button.md-logo {
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  padding: 0.2rem;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 3px rgba(36, 26, 23, 0.18);
+}
+
+.md-header__button.md-logo img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+}
+
+/* Match the treatment inside the mobile navigation drawer. */
+.md-nav__title .md-logo {
+  display: inline-flex;
+  padding: 0.2rem;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 3px rgba(36, 26, 23, 0.18);
+}
+
+.md-nav__title .md-logo img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+}
