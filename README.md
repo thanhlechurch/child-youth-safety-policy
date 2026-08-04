@@ -3,7 +3,7 @@
 The source for Thanh Le Church's Church-Wide Child and Youth Safety Policy website.
 
 - Current draft: version 0.14
-- Live site: https://thanh-le-church.github.io/child-youth-safety-policy/
+- Live site: https://thanhlechurch.github.io/child-youth-safety-policy/
 - Status: draft for review and adoption
 
 ## Local preview
