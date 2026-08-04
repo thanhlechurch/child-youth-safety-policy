@@ -8,6 +8,8 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  logo: assets/images/tlc-logo.png
+  favicon: assets/images/tlc-logo.png
   palette:
     - scheme: default
       primary: red
