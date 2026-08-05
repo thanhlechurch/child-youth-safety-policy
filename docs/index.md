@@ -1,12 +1,34 @@
-# TLC Church-Wide Child and Youth Safety Policy
+<section class="tlc-hero">
+  <div class="tlc-hero__copy">
+    <p class="tlc-eyebrow">Thanh Le Church · Stanton, California</p>
+    <h1>Child &amp; Youth Safety Policy</h1>
+    <p class="tlc-hero__statement">Clear standards. Shared responsibility. Faithful care.</p>
+    <div class="tlc-status-row">
+      <span class="tlc-status tlc-status--draft">Draft for leadership review</span>
+      <span class="tlc-version">Version 0.14</span>
+    </div>
+  </div>
+</section>
 
-**Thanh Le Church &middot; Stanton, California**
+Welcome to the church-wide Child and Youth Safety Policy manual. Use the navigation or search to find any article, section, or appendix.
 
-*Version 0.14 &mdash; draft for review and adoption*
-
----
-
-Welcome to the Church-Wide Child and Youth Safety Policy manual. Use the navigation or search to find any article, section, or appendix.
+<div class="tlc-action-grid">
+  <a class="tlc-action-card" href="articles/">
+    <span class="tlc-action-card__label">Policy manual</span>
+    <strong>Read the Policy</strong>
+    <span>Browse all nine articles and 37 sections <span aria-hidden="true">→</span></span>
+  </a>
+  <a class="tlc-action-card tlc-action-card--urgent" href="appendices/appendix-a/">
+    <span class="tlc-action-card__label">When a concern arises</span>
+    <strong>Immediate Response Guide</strong>
+    <span>Protect, listen, report, notify, and preserve <span aria-hidden="true">→</span></span>
+  </a>
+  <a class="tlc-action-card" href="appendices/appendix-b/">
+    <span class="tlc-action-card__label">Contacts and pathways</span>
+    <strong>Reporting Directory</strong>
+    <span>Find external and internal reporting routes <span aria-hidden="true">→</span></span>
+  </a>
+</div>
 
 !!! danger "Required pre-adoption review"
     TLC will obtain appropriate review from California legal counsel, its liability insurer, and a qualified child-safeguarding professional before final adoption. Current reporting requirements, insurance conditions, contact information, record-retention rules, and emergency authority will be confirmed before the effective date.

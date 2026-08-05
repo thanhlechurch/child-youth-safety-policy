@@ -1,39 +1,469 @@
-/* Custom styling for TLC Safety Policy manual */
+/* Thanh Le Church Child & Youth Safety Policy brand system */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
 
 :root {
-  --md-primary-fg-color: #c31c13;
-  --md-primary-fg-color--light: #d94b3d;
-  --md-primary-fg-color--dark: #8f0f09;
-  --md-accent-fg-color: #c31c13;
-  --md-accent-fg-color--transparent: rgba(195, 28, 19, 0.1);
+  --tlc-red: #a51a15;
+  --tlc-red-deep: #6b120e;
+  --tlc-orange: #d95b1c;
+  --tlc-gold: #ea8f2d;
+  --tlc-canvas: #fff9f4;
+  --tlc-paper: #ffffff;
+  --tlc-ink: #241a17;
+  --tlc-muted: #645752;
+  --tlc-border: #e8d9d0;
+  --tlc-info: #2f5e73;
+  --tlc-success: #287a52;
+  --tlc-warning: #8a4b00;
+  --tlc-danger: #b42318;
+  --tlc-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --md-primary-fg-color: var(--tlc-red);
+  --md-primary-fg-color--light: #c54835;
+  --md-primary-fg-color--dark: var(--tlc-red-deep);
+  --md-accent-fg-color: var(--tlc-red);
+  --md-accent-fg-color--transparent: rgba(165, 26, 21, 0.1);
+  --md-default-bg-color: var(--tlc-canvas);
+  --md-default-fg-color: var(--tlc-ink);
+  --md-default-fg-color--light: var(--tlc-muted);
+  --md-typeset-a-color: var(--tlc-red);
 }
 
-/* Keep the full-color church mark legible against the red site header. */
+html {
+  scroll-padding-top: 5.4rem;
+}
+
+body {
+  background: var(--tlc-canvas);
+}
+
+*:focus-visible {
+  outline: 3px solid var(--tlc-orange);
+  outline-offset: 3px;
+}
+
+/* Institutional header and stained-glass accent */
+.md-header {
+  color: var(--tlc-ink);
+  background: rgba(255, 249, 244, 0.98);
+  border-bottom: 1px solid var(--tlc-border);
+  box-shadow: 0 2px 12px rgba(70, 35, 25, 0.07);
+}
+
+.md-header::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, var(--tlc-red-deep), var(--tlc-red) 45%, var(--tlc-orange) 78%, var(--tlc-gold));
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
 .md-header__button.md-logo {
-  margin: 0.2rem 0.4rem 0.2rem 0;
-  padding: 0.2rem;
-  background: #fff;
-  border-radius: 0.3rem;
-  box-shadow: 0 1px 3px rgba(36, 26, 23, 0.18);
+  margin: 0.15rem 0.5rem 0.15rem 0;
+  padding: 0.18rem;
+  background: var(--tlc-paper);
+  border: 1px solid var(--tlc-border);
+  border-radius: 0.35rem;
+  box-shadow: 0 1px 4px rgba(36, 26, 23, 0.1);
 }
 
-.md-header__button.md-logo img {
-  width: 1.4rem;
-  height: 1.4rem;
+.md-header__button.md-logo img,
+.md-nav__title .md-logo img {
+  width: 1.55rem;
+  height: 1.55rem;
   object-fit: contain;
 }
 
-/* Match the treatment inside the mobile navigation drawer. */
+.md-search__form {
+  background: rgba(107, 18, 14, 0.07);
+  border: 1px solid rgba(107, 18, 14, 0.1);
+}
+
+.md-search__input::placeholder {
+  color: var(--tlc-muted);
+  opacity: 1;
+}
+
+.md-tabs {
+  background: var(--tlc-red-deep);
+  box-shadow: none;
+}
+
+.md-tabs__link {
+  font-weight: 600;
+  opacity: 0.78;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* Warm navigation surfaces */
+.md-sidebar {
+  background: transparent;
+}
+
+.md-nav__title {
+  color: var(--tlc-ink);
+  font-weight: 700;
+}
+
+.md-nav__link {
+  border-radius: 0.25rem;
+}
+
+.md-nav__link:hover {
+  color: var(--tlc-red);
+}
+
+.md-nav__link--active {
+  color: var(--tlc-red);
+  font-weight: 700;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--tlc-red-deep);
+}
+
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 650;
+}
+
 .md-nav__title .md-logo {
   display: inline-flex;
-  padding: 0.2rem;
-  background: #fff;
-  border-radius: 0.3rem;
-  box-shadow: 0 1px 3px rgba(36, 26, 23, 0.18);
+  padding: 0.18rem;
+  background: var(--tlc-paper);
+  border: 1px solid var(--tlc-border);
+  border-radius: 0.35rem;
 }
 
-.md-nav__title .md-logo img {
-  width: 1.4rem;
-  height: 1.4rem;
-  object-fit: contain;
+/* Paper-like policy reading surface */
+.md-content__inner {
+  padding: 1.7rem 2rem 2.2rem;
+  background: var(--tlc-paper);
+  border: 1px solid var(--tlc-border);
+  border-radius: 0.45rem;
+  box-shadow: 0 8px 28px rgba(70, 35, 25, 0.055);
+}
+
+.md-typeset {
+  color: var(--tlc-ink);
+  line-height: 1.72;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--tlc-ink);
+  font-family: var(--tlc-serif);
+  font-weight: 700;
+  letter-spacing: -0.018em;
+}
+
+.md-typeset h1 {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--tlc-border);
+}
+
+.md-typeset h1::after {
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin-top: 0.65rem;
+  content: "";
+  background: linear-gradient(90deg, var(--tlc-red), var(--tlc-orange));
+  border-radius: 999px;
+}
+
+.md-typeset h2 {
+  margin-top: 1.8em;
+}
+
+.md-typeset a {
+  text-decoration-color: rgba(165, 26, 21, 0.35);
+  text-underline-offset: 0.16em;
+}
+
+.md-typeset a:hover {
+  color: var(--tlc-red-deep);
+  text-decoration-color: currentColor;
+}
+
+.md-typeset table:not([class]) {
+  overflow: hidden;
+  border: 1px solid var(--tlc-border);
+  border-radius: 0.35rem;
+  box-shadow: none;
+}
+
+.md-typeset table:not([class]) th {
+  color: var(--tlc-ink);
+  background: #f7eee8;
+  border-bottom: 2px solid var(--tlc-border);
+}
+
+.md-typeset table:not([class]) td {
+  border-top-color: var(--tlc-border);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: #fffaf7;
+}
+
+/* Functional callouts: meaning controls color, not the church brand. */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.35rem;
+  box-shadow: none;
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--tlc-info);
+}
+
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background: rgba(47, 94, 115, 0.1);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: var(--tlc-danger);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background: rgba(180, 35, 24, 0.09);
+}
+
+/* Homepage identity and task-oriented entry points */
+.tlc-hero {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: min(100%, 29rem);
+  margin: 0 auto 1.6rem;
+  padding: 2.1rem 2rem 1.9rem;
+  color: #fff;
+  background:
+    radial-gradient(circle at 90% 15%, rgba(234, 143, 45, 0.42), transparent 28%),
+    linear-gradient(125deg, var(--tlc-red-deep), var(--tlc-red) 62%, #c33d18);
+  border-radius: 0.42rem;
+}
+
+.tlc-hero::after {
+  position: absolute;
+  right: -3.2rem;
+  bottom: -5.5rem;
+  width: 14rem;
+  height: 14rem;
+  content: "";
+  border: 1.3rem solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+.tlc-hero__copy {
+  position: relative;
+  z-index: 1;
+  max-width: 38rem;
+}
+
+.md-typeset .tlc-hero h1 {
+  max-width: 32rem;
+  margin: 0.2rem 0 0.65rem;
+  padding: 0;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.06;
+  border: 0;
+}
+
+.md-typeset .tlc-hero h1::after {
+  display: none;
+}
+
+.tlc-eyebrow {
+  margin: 0;
+  color: #ffe7d8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tlc-hero__statement {
+  margin: 0;
+  color: #fff4ed;
+  font-size: 1.02rem;
+}
+
+.tlc-status-row {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.tlc-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  border-radius: 999px;
+}
+
+.tlc-status--draft {
+  color: #5b2e00;
+  background: #ffe3b3;
+  border: 1px solid #ffc970;
+}
+
+.tlc-version {
+  color: #f8ded4;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.tlc-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.35rem 0 1.8rem;
+}
+
+.md-typeset .tlc-action-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-height: 8.2rem;
+  padding: 1rem;
+  color: var(--tlc-ink);
+  text-decoration: none;
+  background: #fffaf7;
+  border: 1px solid var(--tlc-border);
+  border-top: 3px solid var(--tlc-red);
+  border-radius: 0.35rem;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.md-typeset .tlc-action-card:hover {
+  color: var(--tlc-ink);
+  border-color: #d9b7a7;
+  box-shadow: 0 8px 20px rgba(70, 35, 25, 0.09);
+  transform: translateY(-2px);
+}
+
+.md-typeset .tlc-action-card--urgent {
+  border-top-color: var(--tlc-danger);
+}
+
+.tlc-action-card__label {
+  color: var(--tlc-red);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tlc-action-card strong {
+  font-family: var(--tlc-serif);
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.tlc-action-card > span:last-child {
+  margin-top: auto;
+  color: var(--tlc-muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.md-footer {
+  background: var(--tlc-red-deep);
+}
+
+.md-footer-meta {
+  background: #4e0c09;
+}
+
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title {
+    color: #fff;
+    background: var(--tlc-red-deep);
+  }
+
+  .md-nav__source {
+    background: var(--tlc-red);
+  }
+}
+
+@media screen and (max-width: 59.9844em) {
+  .md-header__title {
+    font-size: 0.78rem;
+  }
+
+  .tlc-action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .tlc-action-card {
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 44.9844em) {
+  .md-content__inner {
+    padding: 1rem 1rem 1.5rem;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .tlc-hero {
+    width: 100%;
+    margin: 0 auto 1.35rem;
+    padding: 1.8rem 1.1rem 1.6rem;
+    border-radius: 0.42rem;
+  }
+
+  .tlc-status-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media print {
+  .md-content__inner {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .tlc-hero {
+    margin: 0 0 1rem;
+    color: var(--tlc-ink);
+    background: none;
+    border: 1px solid var(--tlc-border);
+  }
+
+  .md-typeset .tlc-hero h1,
+  .tlc-eyebrow,
+  .tlc-hero__statement,
+  .tlc-version {
+    color: var(--tlc-ink);
+  }
 }
