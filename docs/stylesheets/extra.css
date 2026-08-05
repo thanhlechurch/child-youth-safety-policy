@@ -442,13 +442,15 @@ body {
     border-radius: 0.42rem;
   }
 
+  .tlc-status-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
   .md-typeset .tlc-hero h1 {
     font-size: clamp(2rem, 10vw, 2.75rem);
     white-space: normal;
-  }
-
-  .tlc-status-row {
-    flex-wrap: wrap;
   }
 }
 
