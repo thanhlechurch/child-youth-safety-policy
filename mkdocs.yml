@@ -1,4 +1,4 @@
-site_name: TLC Church-Wide Child and Youth Safety Policy
+site_name: Thanh Le Church | Child & Youth Safety Policy
 site_description: Thanh Le Church - Church-Wide Child and Youth Safety Policy Manual
 site_author: Thanh Le Church
 site_url: https://thanhlechurch.github.io/child-youth-safety-policy/
@@ -12,14 +12,15 @@ theme:
   favicon: assets/images/tlc-logo.png
   palette:
     - scheme: default
-      primary: red
-      accent: red
+      primary: custom
+      accent: custom
   font:
     text: DM Sans
     code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.footer
     - search.highlight
     - search.suggest
     - toc.follow
@@ -27,6 +28,8 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+copyright: Clear standards. Shared responsibility. Faithful care.
 
 plugins:
   - search:
